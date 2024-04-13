@@ -1,6 +1,6 @@
 package com.example.demo.Service;
 
-import com.example.demo.entity.User;
+import com.example.demo.Modal.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 import java.util.List;

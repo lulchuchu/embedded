@@ -2,7 +2,7 @@ package com.example.demo.Controller;
 
 import com.example.demo.Security.UserDetail;
 import com.example.demo.Service.VehicleService;
-import com.example.demo.entity.Vehicle;
+import com.example.demo.Modal.Vehicle;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;

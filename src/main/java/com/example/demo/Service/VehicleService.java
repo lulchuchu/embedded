@@ -1,8 +1,9 @@
 package com.example.demo.Service;
 
+import com.example.demo.Exception.NotFoundException;
 import com.example.demo.Repository.VehicleRepository;
-import com.example.demo.entity.User;
-import com.example.demo.entity.Vehicle;
+import com.example.demo.Modal.User;
+import com.example.demo.Modal.Vehicle;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,6 +24,9 @@ public class VehicleService {
 
     public Vehicle addVehicle(Vehicle vehicle, Long userId) {
         User user = userService.getUser(userId);
+        if(user == null) {
+            throw new NotFoundException("User not found");
+        }
         vehicle.setUser(user);
         return vehicleRepository.save(vehicle);
     }

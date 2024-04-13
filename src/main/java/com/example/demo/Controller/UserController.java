@@ -1,7 +1,7 @@
 package com.example.demo.Controller;
 
 import com.example.demo.Service.UserService;
-import com.example.demo.entity.User;
+import com.example.demo.Modal.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

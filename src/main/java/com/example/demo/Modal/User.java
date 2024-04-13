@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package com.example.demo.Modal;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -19,6 +19,7 @@ public class User {
     private String phoneNumber;
     private String username;
     private String password;
+    @Enumerated(EnumType.STRING)
     private Role role;
     @OneToMany
     private List<Vehicle> vehicles;
